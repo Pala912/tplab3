@@ -134,7 +134,7 @@ botonInicio.addEventListener('click',function(){
 				}
 			
 		
-			/*puede que no haya dado el valor correcto*/
+			
 			
 			
 			preg.innerHTML =texto+texto2+texto1;
@@ -148,7 +148,7 @@ botonInicio.addEventListener('click',function(){
 		
 }
 
-/*muestra */
+
 	function mostrar(num){
 
 	var p1 = document.getElementById("pregunta1");
