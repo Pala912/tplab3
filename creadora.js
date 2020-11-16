@@ -9,6 +9,10 @@ var i =60;
 		contador.style.backgroundColor="#A93226";
 		document.getElementById("reloj").style.color="#FFFFFF";
 	}
+	var finalizar = document.getElementById("bfinalizar");
+	finalizar.addEventListener('click',function(){
+		detenerTiempo(timer);
+	});
 	if(i==0){
 		detenerTiempo(timer);
 		agregar();
