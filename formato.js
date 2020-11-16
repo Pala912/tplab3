@@ -85,6 +85,7 @@ botonInicio.addEventListener('click',function(){
 		console.log("las respuestas  que dio son: "+respuestas)
 		console.log("las respuestas son: "+respaux);
 		var divcambio = 0 ;
+		var numeroCorrectas =0;
 				/**preparando divs para respuestas**/
 		for (var i = 0 ; i < orden.length; i++) {
 			
@@ -92,7 +93,7 @@ botonInicio.addEventListener('click',function(){
 			var num = orden[i];			
 			if(respaux[i]==respuestas[i]){
 				var texto = "<p class='correcto'>"+listPreguntas[num][0]+"</p><p>Correcto!</p>";					
-				
+				numeroCorrectas++;
 			}
 			else{
 				if(respuestas[i]!=3){
@@ -138,6 +139,8 @@ botonInicio.addEventListener('click',function(){
 			
 			preg.innerHTML =texto+texto2+texto1;
 			preg.className="respuesta"+i;
+			var valorpuntaje = 20*numeroCorrectas;
+			document.getElementById("puntuacion").innerHTML=valorpuntaje;
 			document.getElementById("respuestas").appendChild(preg);
 		}
 		
@@ -147,13 +150,18 @@ botonInicio.addEventListener('click',function(){
 
 /*muestra */
 	function mostrar(num){
+
 	var p1 = document.getElementById("pregunta1");
 	var r1 = document.getElementById("r1_1");
 	var r2 = document.getElementById("r1_2");
 	var r3 = document.getElementById("r1_3");
+	var foto = document.getElementById("foto");
+	foto.src=imagenesLista[num];
+
 	
 
 
+	
 	p1.innerHTML="";
 	p1.innerHTML= listPreguntas[num][0];
 	/**/
@@ -165,6 +173,8 @@ botonInicio.addEventListener('click',function(){
 	/**/
 	r3.innerHTML="";
 	r3.innerHTML= listPreguntas[num][3];
+
+	 
 	};
 
 /*elige las posiciones*/

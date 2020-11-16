@@ -1,6 +1,6 @@
 function cargatiempo(){
 var contador = document.getElementById("tiempo");
-var i =35;
+var i =10000;
 	var timer = setInterval(function(){
 	var reloj= "<p id='reloj'>"+i+"</p>";
 	contador.innerHTML=reloj;	

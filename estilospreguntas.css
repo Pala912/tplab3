@@ -1,13 +1,9 @@
 article{
 	height: 100%;
 }
-form{
-	height: 90%;
-	
-}
 .cajatiempo{
 	width: 10%;
-	height: 5%;
+	height: 10%;
 	display: block;
 	text-align: center;
 	margin-left: auto;
@@ -15,49 +11,43 @@ form{
 }
 .pregunta1{
 	width: 100%;
-	height: 25%;
+	height: 100%;
+	
 	 
 }
+#preguntas{
+	background-color: white;
+	height: 100%;
+}
+#formpregunta{
+	height: 100%;
+}
+
 
 .p1{
 	width: 80%;
 	height: 20%;
 	margin-left: 5%;
+
 	
 	
 }
 .opciones{
-	height: 80%;
+	height: 50%;
 	width: 100%;
 	padding-top: 1%;
+	
 
-}
-
-.pregunta2{
-	width: 100%;
-	height: 70%;
-}
-.pregunta{
-	display: block;
-	width: 100%;
 }
 .opcion{
 	display: block;
 	margin-left: 5%;
 	margin-bottom: 1%;
 }
-.contimagen{
-	height: 60%;
-	width: 50%;
-	margin-left: 25%;
-}
-.contenedor2{
-	height: 40%;
-	width: 100%;
-}
 
 .botonerapregunta{
 	height: 10%;
+	background-color: white;
 }
 .botonerapregunta button{
 	width: 40%;
@@ -75,4 +65,24 @@ form{
 }
 #bfinalizar{
 	display: none;
+}
+.img{
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	width: 100%;
+	
+}
+#foto{
+	display:block;
+	
+	max-width: 50%;
+	margin: auto;
+}
+.cont1{
+	height: 40%;
+	
+}.imagenes{
+	height: 50%;
+	
 }

@@ -33,7 +33,7 @@
 		
 	</article>
 	<article class="NOvisible" id="preguntas">
-		
+			<div class="cont1">
 			<form id="formpregunta" > <!--segundo preguntas-->
 				<div class="visible" id="parte1">
 					<div class="cajatiempo" id="tiempo"></div>
@@ -60,39 +60,17 @@
 
 						<div  class="NOvisible">
 						<input type="radio" name="respuesta" value="3"id="opcion1_4" checked="checked">
-			
 						</div>
 					</div>
 				</div>
-				<div class="pregunta2">
-						<div class="contimagen">
-						<img src="">
-						</div>
-					<div class="contenedor2">
-						<div class="p1">
-						<label class="pregunta">Pregunta</label>
-						</div>
-					
-						<div class="opciones">
-							<div  class="opcion">
-								<input type="radio" name="respuesta_imagen" value="1"id="opcion2_1">
-								<label for="opcion2_1">opcion</label>
-							</div>
-							
-							<div  class="opcion">
-							<input type="radio" name="respuesta_imagen" value="2"id="opcion2_2">
-							<label for="opcion2_2">opcion</label>
-							</div>
-							
-							<div  class="opcion">
-							<input type="radio" name="respuesta_imagen" value="3"id="opcion2_3">
-							<label for="opcion2_3">opcion</label>
-							</div>
-						</div>
-					</div>
+			</div>
+			</form>
+		</div>
+				<div class="imagenes">
+				<div class="img" id="imagen" >
+					<img src="" id="foto">
 				</div>
 				</div>
-				</form>
 			<div class="botonerapregunta">
 				<button id="bsiguiente">Siguiente</button>
 				<button id="bfinalizar" class="botonfinalizar">Finalizar</button>
@@ -101,9 +79,10 @@
 	</article>
 	<article id="final" class="NOvisible"><!--tercero soluciones y puntaje-->
 			<div id="respuestas"></div>
-			<div class="dato3">
-				<p>Gracias por participar <span id="name"></span></p>
-			<div class="botonerapregunta">
+			<div class="despedida">
+				<p>Gracias por participar <span id="name"></span>
+				<br>Tu puntuacion ha sido de: <span id="puntuacion"></span></p>
+			<div class="botonfinal">
 			<button id="recargar">Volver a jugar</button>
 			</div>
 			</div>
@@ -111,6 +90,7 @@
 		
 	</arcticle>
 </section>
+	<script type="text/javascript" src="imagenesListado.js"></script>
 	<script type="text/javascript" src="calificador.js"></script>
 	<script type="text/javascript" src="preguntas.js"></script>
 	<script type="text/javascript" src="formato.js"></script>
