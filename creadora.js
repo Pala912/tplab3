@@ -5,7 +5,7 @@ var i =30;
 	var reloj= "<p id='reloj'>"+i+"</p>";
 	contador.innerHTML=reloj;	
 	i--;
-	if(i<10){
+	if(i<5){
 		contador.style.backgroundColor="#A93226";
 		document.getElementById("reloj").style.color="#FFFFFF";
 	}
@@ -13,7 +13,7 @@ var i =30;
 		detenerTiempo(timer);
 		agregar();
 		var pagpreguntas = document.getElementById("preguntas");
-			var pagrespuestas= document.getElementById("respuestas");
+			var pagrespuestas= document.getElementById("final");
 			pagpreguntas.style.display="none";
 			pagrespuestas.style.display="block";
 			calificador();
