@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ES">
+<head>
+	<title>Quiz</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="estilospreguntas.css">
+	<link rel="stylesheet" type="text/css" href="estilosrespuestas.css">
+
+	<link rel="shortcut icon" href="camaraicono.ico">
+</head>
+<body>
+	<header>
+		<h1>Quiz de peliculas</h1>
+	</header>
+<section>
+	<article class="visible" id="carga"><!--primero carga de nombre-->
+						<div class="inicio">
+		<h2>Desafia tus conocimientos sobre el cine!!</h2>
+			<form id="datos">	
+			<div class="dato1">
+			<label for="nombre">Ingresa tu nombre:</label>
+			<label>Tendras 30 segundos para responder! <br> si no contestas se toman las preguntas no seleccionadas como incorectas <br><br></label>
+			<label>Al final se mostrará cuales respondiste bien</label>
+			</div>
+			<div class="dato2">
+								<input type="text" name="" id="nombre" required="required">
+			</div>				
+			</form>
+			<div class="dato3">
+				<button id="comenzar">Comenzar!</button>
+			</div>
+		
+	</article>
+	<article class="NOvisible" id="preguntas">
+		
+			<form id="formpregunta" > <!--segundo preguntas-->
+				<div class="visible" id="parte1">
+					<div class="cajatiempo" id="tiempo"></div>
+				
+				<div class="pregunta1">
+					<div class="p1">
+					<label class="pregunta" id="pregunta1">Pregunta1</label>
+					</div>
+					<div class="opciones">
+						<div  class="opcion">
+						<input type="radio" name="respuesta" value="0"id="opcion1_1">
+						<label for="opcion1_1"><span id="r1_1">opcion</span></label>
+						</div>
+						
+						<div  class="opcion">
+						<input type="radio" name="respuesta" value="1"id="opcion1_2">
+						<label for="opcion1_2"><span id="r1_2">opcion</span></label>
+						</div>
+						
+						<div  class="opcion">
+						<input type="radio" name="respuesta" value="2"id="opcion1_3">
+						<label for="opcion1_3"><span id="r1_3">opcion</span></label>
+						</div>
+
+						<div  class="NOvisible">
+						<input type="radio" name="respuesta" value="3"id="opcion1_4" checked="checked">
+			
+						</div>
+					</div>
+				</div>
+				<div class="pregunta2">
+						<div class="contimagen">
+						<img src="">
+						</div>
+					<div class="contenedor2">
+						<div class="p1">
+						<label class="pregunta">Pregunta</label>
+						</div>
+					
+						<div class="opciones">
+							<div  class="opcion">
+								<input type="radio" name="respuesta_imagen" value="1"id="opcion2_1">
+								<label for="opcion2_1">opcion</label>
+							</div>
+							
+							<div  class="opcion">
+							<input type="radio" name="respuesta_imagen" value="2"id="opcion2_2">
+							<label for="opcion2_2">opcion</label>
+							</div>
+							
+							<div  class="opcion">
+							<input type="radio" name="respuesta_imagen" value="3"id="opcion2_3">
+							<label for="opcion2_3">opcion</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+				</form>
+			<div class="botonerapregunta">
+				<button id="bsiguiente">Siguiente</button>
+				<button id="bfinalizar" class="botonfinalizar">Finalizar</button>
+			</div>
+			
+	</article>
+	<article id="final" class="NOvisible"><!--tercero soluciones y puntaje-->
+			<div id="respuestas"></div>
+			<div class="dato3">
+				<p>Gracias por participar <span id="name"></span></p>
+			<div class="botonerapregunta">
+			<button id="recargar">Volver a jugar</button>
+			</div>
+			</div>
+			
+		
+	</arcticle>
+</section>
+	<script type="text/javascript" src="calificador.js"></script>
+	<script type="text/javascript" src="preguntas.js"></script>
+	<script type="text/javascript" src="formato.js"></script>
+	<script type="text/javascript" src="creadora.js"></script>
+</body>
+</html>
